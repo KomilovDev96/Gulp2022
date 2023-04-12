@@ -1,0 +1,42 @@
+npm i del - для удаление не нужных файлов при работе гулп
+
+#Работа с HTML 
+npm i gulp-file-include  - работа с html файлами шаблонизатор
+в настройках нужно будет изменить
+"path-autocomplete.pathMappings": {
+        "@img" : "${folder}/src/img",
+        "@scss" : "${folder}/src/scss",
+        "@js" : "${folder}/src/js",
+}
+npm i gulp-replace          - плагин для резки не нужных вешей 
+npm i gulp-webp-html-nosvg  - для html для картинки преоброзует в webp
+npm i gulp-version-number   - для кэширование чтобы стили работали в дальнейшом
+
+#Работа с Плагинами
+
+ npm i gulp-notify   - плагин для удобного  вывода ошибки
+ npm i gulp-plumber  - плагин для оброботки с ошибками для файлов
+ npm i browser-sync  - плагин для браузера обнавление страницы при изменение 
+
+
+#Работа с SCSS 
+npm i gulp-sass
+npm i sass 
+npm i gulp-rename   - для .min что бы css поставить суфикс
+npm i gulp-clean-css - сжатие css файла
+npm i gulp-webpcss  - вывод webp изображение - npm i webp-converter@2.2.3 его тоже нужно будет устоновить
+npm i autoprefixer   - Добавление вендырных префексов 
+npm i gulp-group-css-media-queries  - групировка медиа запросов
+
+#Работа с JS 
+npm i webpack        -  Работа с webp 
+npm i webpack-stream -  Работа с webp 
+
+#Работа с Картинками
+npm i gulp-webp  
+npm i gulp-imagemin
+
+#Работа с Шрифтами 
+npm i gulp-fonter
+npm i gulp-ttf2woff2
+fs module 
