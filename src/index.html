@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/head.html', {
-"title" : "Главная"
+"title" : "Azdev96"
 })
 
 <body>
-    @@include('html/header.html')
-    <main>
-        
-    </main>
-    @@include('html/footer.html')
-    <script src="js/app.min.js"></script>
+    <div class="wrapper">
+        @@include('html/header.html')
+        <div class="container zIndex">
+            @@include('html/sections/main.html')
+        </div>
+        @@include('html/sections/about.html')
+        @@include('html/sections/skils.html')
+        @@include('html/sections/portfolio.html')
+        @@include('html/footer.html')
+    </div>
 </body>
 
 </html>

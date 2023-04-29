@@ -1,0 +1,111 @@
+:root {
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+    0 8px 10px -6px var(--tw-shadow-color);
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-shadow-color: rgba(0, 0, 0, 0.5);
+  --b3: 219 18% 15%;
+  --tw-bg-opacity: 1;
+  --rounded-box: 1rem;
+  --pf: 262 80% 40%;
+}
+
+.portfolio {
+  padding: 100px 0;
+  &__conunti {
+    display: flex;
+    justify-content: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-radius: var(--rounded-btn, 0.5rem);
+      height: 3rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      line-height: 1em;
+      color: white;
+      text-transform: uppercase;
+      margin: 10px 0;
+      font-weight: 600;
+      background: rgb(16, 25, 107);
+      transition: 500ms;
+      &:hover {
+        background: rgb(55, 59, 97);
+      }
+    }
+  }
+  &__title {
+    font-size: 45px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    color: rgb(24, 22, 70);
+    &::after {
+      content: "";
+      height: 2px;
+      width: 10%;
+      display: inline;
+      background: #d2318e;
+    }
+  }
+  .item {
+    margin-bottom: 40px;
+    background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
+    padding: 20px;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0, 0, 0, 0)),
+      var(--tw-ring-shadow, 0 0 rgba(0, 0, 0, 0)), var(--tw-shadow);
+    border-radius: var(--rounded-box, 1rem);
+    &__images {
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+    }
+    &__descriptions {
+      a {
+        color: rgb(238, 238, 238);
+        text-decoration: underline;
+        font-size: 25px;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 10px;
+      }
+      p {
+        line-height: 24px;
+        font-weight: 400;
+        font-size: 18px;
+        color: rgb(229, 229, 229);
+        margin: 20px 0;
+      }
+    }
+    &__buttons {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: var(--rounded-btn, 0.5rem);
+        height: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 1em;
+        color: white;
+        text-transform: uppercase;
+        margin: 10px 0;
+        font-weight: 600;
+        background-color: hsl(var(--pf, var(--p)) / 1);
+        transition: 500ms;
+        &:hover {
+          background: rgb(55, 59, 97);
+        }
+      }
+    }
+  }
+}
